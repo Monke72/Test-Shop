@@ -1,0 +1,24 @@
+.dev {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 22px 0 10px 0;
+  font-size: 11px;
+
+  &__text {
+    opacity: 0.6;
+    line-height: 1;
+    padding-bottom: 5px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 3px;
+    color: var(--color-dark);
+    background-color: #8b8b8b1a;
+    padding: 3px;
+    border-radius: 10px;
+  }
+}

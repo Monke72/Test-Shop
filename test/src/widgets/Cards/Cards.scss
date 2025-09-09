@@ -1,0 +1,56 @@
+.cards {
+  padding-top: 20px;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 7.5px;
+    row-gap: 8.5px;
+    @include mobile-l {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 5px;
+      row-gap: 5px;
+    }
+    @include mobile {
+      column-gap: 3px;
+      row-gap: 3px;
+    }
+  }
+}
+.fake__card {
+  width: clamp(8.938rem, 0.125rem + 31.333vw, 11.875rem);
+  height: clamp(16.875rem, 13.313rem + 12.667vw, 18.063rem);
+  background: #e0e0e0;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+
+  @include mobile-l {
+    width: clamp(10.813rem, -0.188rem + 48.889vw, 13.563rem);
+    height: clamp(16.125rem, 8.375rem + 34.444vw, 18.063rem);
+  }
+}
+
+.fake__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150px; /* старт за пределами */
+  width: 150px; /* ширина блика */
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 100%;
+  }
+}

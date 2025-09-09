@@ -1,0 +1,27 @@
+.banner {
+  background: url("../../shared/images/swiper-image.jpg") no-repeat;
+  background-size: cover;
+  min-height: clamp(10.375rem, -0.857rem + 42.286vw, 15rem);
+  width: 100%;
+  border-radius: 20px;
+  margin-block: 10px;
+  cursor: pointer;
+  background-position: center;
+  transition: 0.3s;
+  position: relative;
+
+  @include mobile {
+    min-height: clamp(8.75rem, -0.25rem + 40vw, 10.375rem);
+  }
+
+  @include hover {
+    opacity: 0.9;
+  }
+
+  &__pagination {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-100%, -50%);
+  }
+}

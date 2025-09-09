@@ -1,0 +1,24 @@
+.nav {
+  width: 100%;
+  padding: 16px 33px;
+  border: 1px solid var(--color-gray);
+  background-color: var(--color-light);
+  border-radius: 30px;
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    cursor: pointer;
+    transition-duration: 0.4s;
+    @include hover {
+      opacity: 0.4;
+      transform: scale(1.03);
+    }
+  }
+
+  &__iamge {
+  }
+}

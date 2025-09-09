@@ -1,0 +1,45 @@
+.common {
+  flex: 1;
+
+  @include mobile-l {
+    font-size: 15px;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+
+  &__list {
+    padding-top: 15px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(181, 181, 181, 1);
+    line-height: 1;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin-left: 20px;
+
+    &::before {
+      content: "";
+      background: url("../../shared/icons/search-little.svg") no-repeat;
+      position: absolute;
+      height: 10px;
+      width: 10px;
+      left: -17px;
+      top: 12px;
+      z-index: 111;
+    }
+    @include hover {
+      opacity: 0.4;
+    }
+  }
+  &__title {
+    font-size: 17px;
+    padding-top: 10px;
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}

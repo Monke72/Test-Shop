@@ -1,0 +1,22 @@
+@use "./fonts" as *;
+
+:root {
+  --color-light: #fff;
+  --color-gray: #f1f1f1;
+  --color-dark: #292928;
+  --color-orange: #ff6723;
+  --color-yellow: #ffca28;
+  --color-green: #45b649;
+  --color-red: #f24131;
+
+  --size-xl: 17px;
+  --size-l: 16px;
+  --size-m: 14px;
+  --size-s: 13px;
+
+  --ff-inter-regular: "inter__regular", sans-serif;
+  --ff-inter-bold: "inter__bold", sans-serif;
+  --ff-inter-medium: "inter__medium", sans-serif;
+  --ff-inter-semibold: "inter__semibold", sans-serif;
+  --ff-mulish: "mulash", sans-serif;
+}

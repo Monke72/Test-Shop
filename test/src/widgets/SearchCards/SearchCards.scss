@@ -1,0 +1,35 @@
+.searchs {
+  flex: 1;
+
+  &__item {
+    background-color: var(--color-light);
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  &__image {
+    width: 52px;
+    border-radius: 5px;
+    aspect-ratio: 1;
+
+    @include mobile-l {
+      width: 50px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__name {
+    font-size: 16px;
+    @include mobile-l {
+      font-size: 14px;
+    }
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+}
