@@ -9,7 +9,7 @@ const __dirname = dirname(__filePath);
 
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: "/Test-Shop/",
   resolve: {
     alias: {
       "@shared": path.resolve(__dirname, "src/shared/"),
